@@ -10,8 +10,7 @@ namespace KomodoInsuranceClassLibrary
     {
 
         protected readonly List<DevTeam> _devTeamDirectory = new List<DevTeam>();
-
-        // CREATE new Dev Team
+        // CREATE
         public bool CreateDevTeam(DevTeam newDevTeam)
         {
 
@@ -20,15 +19,12 @@ namespace KomodoInsuranceClassLibrary
             bool wasAdded = _devTeamDirectory.Count > startingCount ? true : false;
             return wasAdded;
         }
-
-        // READ - I want to see all of the dev teams available to potentially add someone to an available dev team
-
+        // READ 
         public List<DevTeam> GetAllDevTeams()
         {
             return _devTeamDirectory;
         }
 
-        // Read - return single team ID
         public DevTeam GetDevTeamById(int teamId)
         {
             foreach(DevTeam devTeam in _devTeamDirectory)
@@ -38,8 +34,6 @@ namespace KomodoInsuranceClassLibrary
             }
             return null;
         }
-
-
         // UPDATE
         public bool UpdateDevTeam(int teamId, DevTeam newDevTeam)
         {
