@@ -134,16 +134,17 @@ namespace KomodoInsuranceConsoleApp
 
 
 
+
             // Create the team here and add that list devIdInput to that team
             // pass in list to my create dev team method
-            //make it add multiple devs (do you want to add another dev? main menu, etc)
+            //make it add multiple devs (do you want to add another dev? main menu, etc)00
             // add to dev team repository - get team by ID maybe get the team id before we get the dev id
         }
 
         // Below method related to Case 5
         private void DeleteDeveloper()
         {
-            Console.WriteLine("Enter the developer ID that is associated \n" +
+            Console.WriteLine("Enter the developer ID that is associateed \n" +
                 "to the developer that you like to remove from the database: ");
             Console.WriteLine("You deleted developer ID");
         }
